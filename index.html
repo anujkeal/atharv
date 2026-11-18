@@ -44,6 +44,12 @@
       <p class="hero-copy">One tiny year, a million precious memories.<br>Come celebrate our little one's special day!</p>
       <div class="date-pill"><span>♡</span> Sunday, 22 November <span>♡</span></div>
       <p class="hindi">Aap sabka swagat hai!</p>
+      <button class="button music-toggle" id="music-toggle" type="button" aria-pressed="false">
+        <span aria-hidden="true" id="music-icon">♫</span> <span id="music-label">Play birthday music</span>
+      </button>
+      <audio id="birthday-music" preload="auto" loop>
+        <source src="https://raw.githubusercontent.com/anujkeal/atharv/main/the_mountain-happy-birthday-508020.mp3" type="audio/mpeg">
+      </audio>
       <a class="button button-primary" href="#details">Join the celebration <span aria-hidden="true">↓</span></a>
     </div>
     <div class="wave" aria-hidden="true"></div>
@@ -55,7 +61,6 @@
         <div class="time-box"><strong id="days">--</strong><span>Days</span></div>
         <div class="time-box"><strong id="hours">--</strong><span>Hours</span></div>
         <div class="time-box"><strong id="minutes">--</strong><span>Minutes</span></div>
-        <div class="time-box"><strong id="seconds">--</strong><span>Seconds</span></div>
       </div>
       <p class="countdown-note" id="countdown-note">Counting down to cake time — 5:00 PM IST</p>
     </section>
